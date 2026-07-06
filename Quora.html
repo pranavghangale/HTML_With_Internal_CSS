@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quora</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            margin: 0%; padding: 0%; background-image: url(https://qsf.fs.quoracdn.net/-4-ans_frontend_assets.images.home_page_bg_desktop.png-26-4770753d59b970e1.png);
+        }
+        .container{
+            width: 46%; background: #262626; border-radius: 5px; box-sizing: border-box; margin: auto; height: 100%; margin-top: 6%; align-items: center; padding: 5px;
+        }
+        .quora{
+            color: red; margin: auto; font-size: 60px; margin-top: 4%; font-weight: bold; font-family: Arial, Helvetica, sans-serif; text-align: center;
+        }
+        .tagline{
+            color: #e6e7e8; font-size: 15px; font-weight: 700; text-align: center; margin-top: 4px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .main{
+            display:flex; margin-top:40px;
+        }
+        .left{
+            width:49%; padding-right:27px; border-right:1px solid rgb(62, 62, 62); margin-left: 3%;
+        }
+        p{
+            color: #b1b3b6; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 12.8px; 
+        }
+        .terms{
+            text-decoration: none; color: rgb(72, 148, 253);
+        }
+        .logo{
+            width: 24px; margin-right: 97%; margin-top: -1%;
+        }
+        .google{
+            margin-top: -9.5%; margin-right: 22%; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 15px; 
+        }
+        .fblogo {
+            width: 20px; margin-right: 91%; padding-top: 1.5px; margin-top: -1%; padding-bottom: 1.5px;
+        }
+        .fb{
+            margin-top: -9.5%; margin-right: 17%; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 15px; 
+        }
+        .right{
+            width:50%; padding-left:30px;
+        }
+
+        .btn{
+            width:100%; padding:13px; margin-top:13px; margin-bottom: -5px; background:#181818; color:white; border:1px solid #393839; border-radius:3px; cursor:pointer;
+        }
+
+        .signup{
+            text-align:center; margin-top:20px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-weight: 600; color: white; font-size: 13px;
+        }
+        .login{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-weight: 600; color: white; font-size: 15px;
+        }
+        .loginhr{
+            width: 91%; border-bottom: 0.1px solid rgb(62, 62, 62); margin-top: 8px; margin-left: 0px; border-top: 1px rgb(62, 62, 62);
+        }
+        label{
+            display:block; margin-top:17px; margin-bottom:5px; color: white; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-weight: 500; font-size: 13.5px;
+        }
+        input{
+            width: 84%; padding:12px; background:#181818; color:white; border:1px solid #393839; border-radius:4px; font-size: 15px; margin-top: 1px; padding-left: 7px;
+        }
+        .pass{
+            width: 84%; padding:12px; background:#181818; color:white; border:1px solid #393839; border-radius:4px; font-size: 15px; margin-bottom: -3.5%; margin-top: 1px; padding-left: 7px;
+        }
+        .forgot{
+            color:#B1B3B6; text-decoration:none; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 13px; margin-left: 1px;
+        }
+        .login-btn{
+            float:right; padding:12px 20px; background-color:#275aa7; color: rgb(156, 155, 155); border:none; border-radius:20px; cursor:pointer; margin-top: -3%; margin-right: 8%; font-weight: 600; padding-bottom: 8px;
+        }
+        .langhr{
+            width: 101.5%; border-bottom: 0.1px solid rgb(62, 62, 62); margin-top: 23px; margin-left: -0.82%; border-top: 1px rgb(62, 62, 62); margin-right: -10%; display: block; 
+        }
+        .lang{
+            text-align: center; margin:15px; word-spacing: 10px;
+        }
+        .hindi {
+            color: #4894fd; text-decoration: none; font-size: 13px;
+        }
+        .fa-angle-right {
+            font-size: 15px; color: #e6e7e8; font-weight: lighter; margin-left: 3.5px;
+        }
+        .langhr2{
+            width: 101.5%; border-bottom: 0.1px solid rgb(62, 62, 62); margin-top: 13px; margin-left: -0.82%; border-top: 1px rgb(62, 62, 62); margin-right: -10%; display: block; 
+        }
+        .footer{
+            text-align:center; margin-top:16px; margin-bottom: 11px;
+        }
+        .links{
+            text-decoration: none; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 13px; color: white;
+        }
+        .fa-copyright{
+            font-size: 10px; font-weight: lighter;
+        }
+        
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="quora">Quora</div>
+
+        <div class="tagline">A place to share knowledge and better understand the world
+        </div>
+
+        <div class="main">
+
+            <div class="left">
+
+            <p>
+                By continuing you indicate that you agree to
+                Quora's <a href="#" class="terms"> Terms of Service </a>and <a href="#" class="terms">Privacy Policy.</a>
+            </p>
+
+            <button class="btn">
+                <img src="c:\Users\prana\Downloads\icons8-google-48.png" class="logo"> <div class="google">Continue with Google</div>
+            </button>
+
+            <button class="btn">
+                <img src="c:\Users\prana\Downloads\facebook-logo.png" class="fblogo">  <div class="fb">Continue with Facebook</div>
+            </button>
+
+            <div class="signup">
+                Sign up with email
+            </div>
+
+        </div>
+
+
+        <div class="right">
+
+            <div class="login">Login</div>
+            <hr class="loginhr">
+
+            <label>Email</label>
+            <input type="email" placeholder="Your email">
+
+            <label>Password</label>
+            <input type="password" placeholder="Your password" class="pass">
+
+            <br><br><br>
+
+            <a href="#" class="forgot">
+                Forgot password?
+            </a>
+
+            <button class="login-btn">
+                Login
+            </button>
+
+        </div>
+
+    </div>
+
+    <hr class="langhr">
+
+    <div class="lang">
+        <a href="#" class="hindi">हिंदी</a><i class="fa fa-angle-right" aria-hidden="true"></i> <a href="#" class="hindi">मराठी</a><i class="fa fa-angle-right" aria-hidden="true"></i>
+    </div>
+
+    <hr class="langhr2">
+
+    <div class="footer">
+        <a href="#" class="links">About · Careers · Privacy · Terms · Contact · Languages · Your Ad choices · Press · <i class="fa fa-copyright" aria-hidden="true"></i> Quora, Inc. 2026 </a>
+    </div>
+        </div>
+
+    </div>
+
+    
+
+
+</body>
+</html>
